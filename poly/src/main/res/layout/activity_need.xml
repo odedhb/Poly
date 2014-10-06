@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:background="#ccc"
+                tools:context="com.robinlabs.poly.NeedActivity"
+    >
+
+    <EditText
+        android:id="@+id/need_title"
+        android:hint="Form title"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_height="48dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="96dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:id="@+id/need_uri"
+            android:singleLine="true"
+            android:hint="URL to pass the questions to"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:text="SAVE"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="96dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFF"
+            android:padding="4dp"
+            android:text="Questions"
+            android:layout_height="wrap_content"/>
+
+        <ExpandableListView
+            android:id="@+id/question_list"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="48dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Add question"
+            android:height="48dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/add_question"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

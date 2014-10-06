@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="edit_need_item_style">
+
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginBottom">32dp</item>
+
+    </style>
+
+</resources>
